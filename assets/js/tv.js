@@ -184,7 +184,7 @@ var TV = (function () {
         }
         video = document.createElement('video');
         video.setAttribute('playsinline', 'playsinline');
-        video.title = 'Temaisgame.TV';
+        video.title = 'Neave.TV';
         video.autoPlay = false;
         video.loop = false;
         video.muted = false;
