@@ -82,7 +82,7 @@ a:link {
     bottom: 0;
     width: 100%;
     height: 100%;
-    animation: slide 2s linear infinite;
+    animation: scanlines 240s linear infinite;
     overflow: hidden;
     pointer-events: none;
     background-image: -webkit-radial-gradient( center,ellipse cover,transparent 0%,transparent 60%,rgba(0,0,0,0.5) 100% ),-webkit-repeating-linear-gradient( top,transparent 0px,transparent 1px,rgba(0,0,0,0.5) 3px );
@@ -93,12 +93,12 @@ a:link {
     background-size: 100% 100%,100% 6px
 }
 
-@keyframes slide {
+@keyframes scanlines {
     from {
         background-position: 0 0;
     }
     to {
-        background-position: 0 72px;
+        background-position: 0 1080px;
     }
 }
 
