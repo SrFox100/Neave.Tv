@@ -82,7 +82,7 @@ a:link {
     bottom: 0;
     width: 100%;
     height: 100%;
-    animation: scanlines 0.3s linear infinite;
+    animation: scanlines 0.25s linear infinite;
     overflow: hidden;
     pointer-events: none;
     background-image: -webkit-radial-gradient( center,ellipse cover,transparent 0%,transparent 60%,rgba(0,0,0,0.5) 100% ),-webkit-repeating-linear-gradient( top,transparent 0px,transparent 1px,rgba(0,0,0,0.5) 3px );
