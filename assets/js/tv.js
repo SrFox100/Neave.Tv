@@ -234,7 +234,7 @@ var TV = (function () {
         }
         drawVideo();
         clearTimeout(videoTimeoutID);
-        videoTimeoutID = setTimeout(loadNextVideo, 160);
+        videoTimeoutID = setTimeout(loadNextVideo, 100);
     };
     return TV;
 })();
