@@ -17,8 +17,8 @@ Array.prototype.shuffle = function () {
 };
 var TV = (function () {
     var TV = {},
-    TV_WIDTH = auto,
-    TV_HEIGHT = auto,
+    TV_WIDTH = 800,
+    TV_HEIGHT = 450,
     video,
     videoWidth = TV_WIDTH,
     videoHeight = TV_HEIGHT,
