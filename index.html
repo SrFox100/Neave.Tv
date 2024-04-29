@@ -16,7 +16,7 @@
         <meta name="msapplication-TileColor" content="#000">
         <meta name="msapplication-navbutton-color" content="#000">
         <meta name="theme-color" sizes="64x64" content="#000">
-        <link rel="icon" href="assets/images/icon.png">
+        <link rel="icon" href="assets/icon.png">
         <style>
             @keyframes neavetv-anim {
                 to {
@@ -135,10 +135,51 @@
                 z-index: 100;
             }
         </style>
-        <link rel="stylesheet" href="./assets/css/tv.css">
-        <link rel="stylesheet" href="./assets/css/css.css">
+        <link rel="stylesheet" href="./assets/tv.css">
+        <link rel="stylesheet" href="./assets/css.css">
     </head>
     <body>
-        
+        <div id="ads" style="display:none;width: 100%;height: 90px;text-align: center;padding: 10px 0;"></div>
+        <script>
+            if (window.adsbygoogle) {
+                adsbygoogle = window.adsbygoogle;
+            } else {
+                adsbygoogle = new Array();
+            }
+            adsbygoogle.push({
+                google_ad_client: "ca-pub-6469407771801779",
+                enable_page_level_ads: true
+            });
+        </script>
+        <canvas class="tv" width="800" height="450"></canvas>
+        <div class="autoplay">
+            <h1>Temaisgame.TV</h1>
+            <p id="helptext">Click to channel-hop</p>
+        </div>
+        <div class="scanlines"></div>
+        <a href="https://temaisgame.neocities.org" target="_top" class="temaisgame">
+            <span class="disc"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                <path id="rect839" d="M 131.97601,115.24178 H 371.0469 c 9.00339,0 16.25163,7.22198 16.25163,16.19277 v 45.95342 c 0,8.9708 -7.24824,16.19277 -16.25163,16.19277 H 131.97601 c -9.00339,0 -16.25162,-7.22197 -16.25162,-16.19277 v -45.95342 c 0,-8.97079 7.24823,-16.19277 16.25162,-16.19277 z" style="fill:#ffffff;stroke:#ffffff;stroke-width:0.794443;stroke-opacity:0"/>
+                <path id="rect836" d="m 218.42281,178.57453 h 71.22896 c 4.85176,0 8.75768,7.6342 8.75768,17.11704 v 207.20628 c 0,9.48285 -3.90592,17.11704 -8.75768,17.11704 h -71.22896 c -4.85175,0 -8.75767,-7.63419 -8.75767,-17.11704 V 195.69157 c 0,-9.48284 3.90592,-17.11704 8.75767,-17.11704 z" style="fill:#ffffff;stroke:#040000;stroke-width:0.851372;stroke-opacity:0"/>
+            </svg>
+            <span class="title">Temaisgame</span>
+        </a>
+        <a class="goback" href="/">Go Back</a>
+        <p class="alt">
+            Please upgrade your web browser!<br>
+            Get <a href="https://www.google.com/chrome/" rel="nofollow" target="_top">Google &nbsp;Chrome</a>
+            or <a href="https://www.mozilla.org/firefox/" rel="nofollow" target="_top">Mozilla &nbsp;Firefox</a>
+            .
+        </p>
+        <script src="./assets/tv.js"></script>
+        <script src="./assets/mobile.js"></script>
+        <script>
+            TV.playlist = [];
+        </script>
+        <audio id='beep'>
+            <source src="./assets/blip.mp3">
+        </audio>
+        <div id="ads_bottom_static" style="display:none;width: 100%;height: 90px;text-align: center;padding: 10px 0;"></div>
     </body>
 </html>
