@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head prefix="og: http://ogp.me/ns#">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Neave.Tv - Television without context.</title>
+        <meta name="description" content="Channel-hop through a collection of weird and bewildering videos.">
+        <meta name="author" content="Neave. Repository by SrFox100.">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+        <meta name="referrer" content="origin">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Neave.TV">
+        <meta name="application-name" content="Neave.TV">
+        <meta name="msapplication-tooltip" content="Neave.TV">
+        <meta name="msapplication-TileColor" content="#000">
+        <meta name="msapplication-navbutton-color" content="#000">
+        <meta name="theme-color" sizes="64x64" content="#000">
+        <link rel="icon" href="assets/images/icon.png">
+        <style>
+            @keyframes neavetv-anim {
+                to {
+                    background-position: 0 400%
+                }
+            }
 
+            @keyframes fade-anim {
+                0% {
+                    opacity: 0
+                }
+
+                40% {
+                    opacity: 0
+                }
+
+                50% {
+                    opacity: 1
+                }
+
+                60% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 0
+                }
+            }
+
+            @keyframes fade-mid-anim {
+                0% {
+                    opacity: .5
+                }
+
+                40% {
+                    opacity: .5
+                }
+
+                50% {
+                    opacity: 1
+                }
+
+                60% {
+                    opacity: .5
+                }
+
+                100% {
+                    opacity: .5
+                }
+            }
+
+            .neavetv {
+                position: absolute;
+                display: block;
+                left: 15px;
+                left: calc(15px + env(safe-area-inset-left));
+                top: 15px;
+                top: calc(15px + env(safe-area-inset-top));
+                width: 44px;
+                height: 44px;
+                margin: 0;
+                padding: 0;
+                z-index: 100
+            }
+
+            .neavetv .title {
+                display: none
+            }
+
+            .neavetv svg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 100;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                margin: 0;
+                padding: 0;
+                box-sizing: content-box;
+                pointer-events: none
+            }
+
+            .mobile .neavetv svg {
+                animation: fade-mid-anim 5s infinite ease-in-out
+            }
+
+            .neavetv .disc {
+                position: absolute;
+                display: block;
+                width: 44px;
+                height: 44px;
+                background-color: #9fc;
+                background-image: linear-gradient(to bottom,#9fc 0%,#9cf 25%,#f9c 50%,#fc9 75%,#9fc 100%);
+                background-size: 100% 400%;
+                border-radius: 50%;
+                pointer-events: none;
+                animation: neavetv-anim 8s infinite linear;
+                opacity: 0;
+                will-change: opacity;
+                transition: opacity .2s ease-out
+            }
+
+            .mobile .neavetv .disc {
+                animation: neavetv-anim 8s infinite linear,fade-anim 5s infinite ease-in-out
+            }
+
+            body:not(.mobile) .neavetv:hover .disc {
+                opacity: 1
+            }
+
+            .neavetv:active {
+                margin-top: 1px
+            }
+
+            .goback {
+                z-index: 100;
+            }
+        </style>
+        <link rel="stylesheet" href="./assets/css/tv.css">
+        <link rel="stylesheet" href="./assets/css/css.css">
+    </head>
+    <body>
+        
+    </body>
+</html>
