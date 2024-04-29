@@ -84,7 +84,7 @@ var TV = (function () {
         videoIndex++;
         videoIndex %= TV.playlist.length;
         videoName = TV.playlist[videoIndex];
-        video.src = 'assets/videos/' + videoName + '.mp4';
+        video.src = '/assets/videos/' + videoName + '.mp4';
         video.load();
     }
     function drawVideo() {
@@ -143,7 +143,7 @@ var TV = (function () {
     }
     function loadAudio(name) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'assets/audio/' + name + '.mp3', true);
+        xhr.open('GET', '/assets/audio/' + name + '.mp3', true);
         xhr.responseType = 'arraybuffer';
         xhr.onload = function () {
             audioContext.decodeAudioData(xhr.response, function (buffer) {
