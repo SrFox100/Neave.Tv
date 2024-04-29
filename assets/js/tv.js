@@ -84,7 +84,7 @@ var TV = (function () {
         videoIndex++;
         videoIndex %= TV.playlist.length;
         videoName = TV.playlist[videoIndex];
-        video.src = '/assets/videos/' + videoName + '.mp4';
+        video.src = 'assets/videos/' + videoName + '.mp4';
         video.load();
     }
     function drawVideo() {
@@ -120,7 +120,7 @@ var TV = (function () {
                 tinyContext.fillRect(0, 0, tinyCanvas.width, tinyCanvas.height);
                 context.drawImage(tinyCanvas, 0, 0, canvas.width, canvas.height);
                 context.drawImage(video, canvasLeft, canvasTop, canvasWidth, canvasHeight);
-            } catch (e) {}
+            } catch(e) {}
         }
         requestAnimationFrame(drawVideo);
     }
@@ -143,7 +143,7 @@ var TV = (function () {
     }
     function loadAudio(name) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '/assets/audio/' + name + '.mp3', true);
+        xhr.open('GET', 'assets/audio/' + name + '.mp3', true);
         xhr.responseType = 'arraybuffer';
         xhr.onload = function () {
             audioContext.decodeAudioData(xhr.response, function (buffer) {
@@ -184,7 +184,7 @@ var TV = (function () {
         }
         video = document.createElement('video');
         video.setAttribute('playsinline', 'playsinline');
-        video.title = 'Temaisgame.TV';
+        video.title = 'Neave.TV';
         video.autoPlay = false;
         video.loop = false;
         video.muted = false;
@@ -234,7 +234,7 @@ var TV = (function () {
         }
         drawVideo();
         clearTimeout(videoTimeoutID);
-        videoTimeoutID = setTimeout(loadNextVideo, 100);
+        videoTimeoutID = setTimeout(loadNextVideo, 160);
     };
     return TV;
 })();
