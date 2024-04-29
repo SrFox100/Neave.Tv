@@ -17,9 +17,6 @@ if (!self.__WB_pmw) {
     let frames = _____WB$wombat$assign$function_____("frames");
     let opener = _____WB$wombat$assign$function_____("opener");
 
-    if (window.location !== window.top.location || window.location.href && !window.location.href.match(/neave\.tv|192\.168/)) {
-        top.location.href = 'https://neave.tv/';
-    }
     window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
         setTimeout(callback, 1000 / 60);
     }
