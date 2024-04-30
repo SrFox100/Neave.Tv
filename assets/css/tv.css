@@ -116,7 +116,7 @@ a:link {
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    background-image: url(/assets/images/play.svg);
+    background-image: url(images/play.svg);
     background-size: 96px 96px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
