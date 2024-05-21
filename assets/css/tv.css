@@ -50,7 +50,6 @@ a:active {
 
 a:link {
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent
 }
 
 .tv {
@@ -71,7 +70,6 @@ a:link {
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent
 }
 
 .scanlines {
@@ -116,12 +114,11 @@ a:link {
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    background-image: url(images/play.svg);
+    background-image: url(/assets/images/play.svg);
     background-size: 96px 96px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     touch-action: manipulation
 }
 
