@@ -70,6 +70,7 @@ a:link {
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
     -webkit-tap-highlight-color: transparent;
+    tap-hightlight-color: transparent;
 }
 
 .scanlines {
@@ -119,6 +120,7 @@ a:link {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
     touch-action: manipulation
 }
 
