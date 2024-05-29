@@ -65,7 +65,7 @@ a:link {
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    background-image: url(../images/testcard-shaded.png);
+    background-image: url(/images/testcard-shaded.png);
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -114,7 +114,7 @@ a:link {
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    background-image: url(../images/play.svg);
+    background-image: url(/images/play.svg);
     background-size: 96px 96px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
